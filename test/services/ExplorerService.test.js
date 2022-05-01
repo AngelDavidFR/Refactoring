@@ -1,7 +1,7 @@
 const Reader = require("../../lib/utils/Reader");
 const ExplorerService=require("../../lib/services/ExplorerService")
 describe("Test for ExplorerService", () => {
-    test("Create a Reader object", () => {
+    test("Test for method of the class ExplorerServices", () => {
         const explorers = Reader.readJsonFile("explorers.json");
         expect(ExplorerService.filterByMission(explorers, "node").length).toBe(10)
         expect(ExplorerService.getAmountOfExplorersByMission(explorers, "node")).toBe(10)
