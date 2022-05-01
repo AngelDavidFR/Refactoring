@@ -61,6 +61,16 @@ const assignFizzBuzzTrick = function(explorer){
 const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assignFizzBuzzTrick(explorer));
 
 // Part 8: Get a list of the explorers in node, if the score is divisible by 5 and 3, set the property trick and the value FIZZBUZZ, if is just divisible by 5 set the property trcik and the value BUZZ, if is just divisible by 3 set the property trick and the value FIZZ, otherwise set the property trick and the score value. TODO
-const Reader = require("./lib/utils/Reader");
-const explorers2 = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
+const Reader2 = require("./lib/utils/Reader");
+const explorers2 = Reader2.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
 console.log(explorers2)
+
+// Clase anterior con la que obtenemos los explorers
+const Reader3 = require("./lib/utils/Reader");
+const explorers3 = Reader3.readJsonFile("explorers.json");
+
+// Aplicación del ExplorerService sobre la lista de explorers
+const ExplorerService=require("./lib/services/ExplorerService")
+console.log(ExplorerService.filterByMission(explorers3, "node"))
+console.log(ExplorerService.getAmountOfExplorersByMission(explorers3, "node"))
+console.log(ExplorerService.getExplorersUsernamesByMission(explorers3, "node"))
