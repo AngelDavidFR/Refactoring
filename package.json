@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AngelDavidFR/Refactoring/issues"
   },
-  "homepage": "https://github.com/AngelDavidFR/Refactoring#readme"
+  "homepage": "https://github.com/AngelDavidFR/Refactoring#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
 }
